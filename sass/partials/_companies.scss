@@ -1,0 +1,105 @@
+.company-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .company {
+      width: 100%;
+      display: flex;
+      padding-left: 60px;
+      padding-top: 40px;
+      gap: 30px;
+      &-wrap {
+        flex: 2;
+        .list-wrap {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          &-item {
+            display: flex;
+            .item-details {
+              display: flex;
+              gap: 15px;
+              margin-right: 20px;
+              img {
+                width: 45px;
+              }
+              .item-image{
+                width: 60px; 
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center
+              }
+              .item-heading {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 150px;
+                overflow: hidden;
+                .item-link {
+                  font-size: 12px;
+                  color: #666;
+                  font-weight: 400;
+                }
+              }
+            }
+            .item-tracking {
+              display: flex;
+              align-items: center;
+              .track {
+                display: flex;
+                gap: 8px;
+                border: 1px solid #ff6059;
+                border-radius: 3px;
+                padding: 7px 10px;
+                cursor: pointer;
+                &-icon {
+                  color: #ff6059;
+                  align-self: center;
+                }
+  
+                &-item {
+                  font-weight: 700;
+                  font-size: 16px;
+                  color: #ff6059;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      &-list {
+        &-heading {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .quick-link {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 34px;
+        }
+        &-title {
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .desc-title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      color: gray;
+      margin-bottom: 20px;
+    }
+  }
+  

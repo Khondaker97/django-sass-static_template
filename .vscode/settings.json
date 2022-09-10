@@ -1,0 +1,12 @@
+{
+  // live sass compiler settings
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/static/css"
+    },
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "editor.defaultFormatter": "null"
+}

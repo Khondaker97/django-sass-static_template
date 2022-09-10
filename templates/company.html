@@ -1,0 +1,58 @@
+{% include 'sidebar.html' %}
+<section class="company-container">
+        {% include 'search.html' %}
+      <div class="company">
+        <main class="company-wrap">
+          <h1 class="desc-title">Similar Accounts</h1>
+          <ul class="list-wrap">
+            {% for company in companies %}
+            <li class="list-wrap-item">
+              <span class="item-details">
+                {% if company.logo %}
+                <img src="{{company.logo}}" alt="" />
+                {% else %}
+                    <div class="item-image" style="background: {{company.color}}">
+                        
+                    </div>
+                {% endif %}
+                <div class="item-heading">
+                  <h4>{{company.company}}</h4>
+                  <a href="{{company.website}}" class="item-link"
+                    >{{company.website}}</a
+                  >
+                </div>
+              </span>
+              <div class="item-tracking">
+                <div class="track">
+                  <i class="fa-solid fa-spinner track-icon"></i>
+                  <button class="track-item">Track</button>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </main>
+        <aside class="quick-link">
+          <h1 class="desc-title">Quick Actions</h1>
+          <ul class="quick-link-wrap">
+            <li>
+              <a href="#" class="quick-link-title">Track new account</a>
+            </li>
+            <li>
+              <a href="#" class="quick-link-title">Bulk track accounts</a>
+            </li>
+            <li><a href="#" class="quick-link-title">Manage accounts</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
+      integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

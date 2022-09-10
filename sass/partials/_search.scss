@@ -1,0 +1,62 @@
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    box-shadow: 4px 2px 16px rgba(30, 30, 30, 0.08);
+
+    &-search {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 16px;
+      cursor: pointer;
+      input {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 14px;
+        border: none;
+        width: 60%;
+        line-height: 22px;
+        cursor: pointer;
+        &::placeholder {
+          color: #ccc;
+          font-weight: 400;
+        }
+      }
+    }
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .notice {
+        padding: 6px 10px;
+        border-radius: 4px;
+        background-color: #eff3f9;
+        position: relative;
+        .dot {
+          position: absolute;
+          right: -5px;
+          top: -5px;
+          background-color: #f44336;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+        }
+      }
+      .pro-pic {
+        width: 34px;
+        height: 34px;
+        object-fit: cover;
+        #profile {
+          width: 100%;
+        }
+      }
+    }
+    .search-icon,
+    .x-icon {
+      font-size: 22px;
+    }
+  }
